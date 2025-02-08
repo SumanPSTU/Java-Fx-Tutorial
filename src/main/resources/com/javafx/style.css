@@ -1,0 +1,9 @@
+.button{
+    -fx-background-color: rgba(120, 144, 246, 0.65);
+    -fx-pref-height: 40px;
+    -fx-pref-width: 200px;
+}
+.label{
+    -fx-font-size: 25px;
+   -fx-text-fill: #2b44bc;
+}
