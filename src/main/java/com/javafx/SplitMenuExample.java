@@ -23,7 +23,9 @@ public class SplitMenuExample extends Application {
         MenuItem smbItem4 = new MenuItem("option -4");
         smb.getItems().addAll(smbItem, smbItem2, smbItem3, smbItem4);
 
-
+        smbItem.setOnAction(e->{
+            System.out.println("SMB selected");
+        });
         HBox hb = new HBox(smb);
         hb.setSpacing(10);
         Scene scene = new Scene(hb,400,300);
