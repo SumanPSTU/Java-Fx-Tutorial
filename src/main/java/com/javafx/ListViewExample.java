@@ -6,13 +6,17 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
+import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.io.FileInputStream;
 
 public class ListViewExample extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         stage.setTitle("ListViewExample");
+        stage.getIcons().add(new Image(new FileInputStream("icon/icon.png")));
         ListView<String> listView = new ListView<>();
         listView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 
@@ -38,5 +42,9 @@ public class ListViewExample extends Application {
         stage.setScene(scene);
 
         stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }
