@@ -8,6 +8,8 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
 import java.io.FileInputStream;
@@ -18,8 +20,9 @@ public class MenuButtonExample extends Application {
     public void start(Stage stage) throws Exception {
         stage.setTitle("MenuButtonExample");
         stage.getIcons().add(new Image(new FileInputStream("icon/icon.png")));
-
+        Font font = new Font("Arial", 25);
         MenuItem menuItem1 = new MenuItem("Option 1");
+
         MenuItem menuItem2 = new MenuItem("Option 2");
         MenuItem menuItem3 = new MenuItem("Option 3");
 
@@ -37,7 +40,7 @@ public class MenuButtonExample extends Application {
         menuItem1.setGraphic(imageView2); // Keep a new ImageView for each MenuItem
 
         MenuButton menuButton = new MenuButton("Options", imageView, menuItem1, menuItem2, menuItem3);
-
+        //menuButton.setFont(font);
         HBox hbox = new HBox(menuButton);
 
 
