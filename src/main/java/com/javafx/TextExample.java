@@ -19,7 +19,7 @@ public class TextExample extends Application {
         stage.setResizable(true);
 
         // Set stage icon
-        InputStream input = new FileInputStream("icon/cloudy_sunny.png");
+        InputStream input = new FileInputStream("icon/icon.png");
         Image icon = new Image(input);
         stage.getIcons().add(icon);
 

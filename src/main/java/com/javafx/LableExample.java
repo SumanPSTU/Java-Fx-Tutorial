@@ -21,7 +21,7 @@ public class LableExample extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         stage.setTitle("LableExample");
-        InputStream inputStream = new FileInputStream("icon/cloudy_sunny.png");
+        InputStream inputStream = new FileInputStream("icon/icon.png");
         Image image = new Image(inputStream);
         stage.getIcons().add(image);
         Label label = new Label("This is a label");
@@ -48,7 +48,6 @@ public class LableExample extends Application {
         )));
         Scene scene = new Scene(hbox, 300, 250);
         stage.setScene(scene);
-
         stage.setMinHeight(200);
         stage.setMinWidth(300);
         stage.setMaxHeight(500);
