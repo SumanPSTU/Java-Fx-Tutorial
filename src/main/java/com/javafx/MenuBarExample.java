@@ -22,8 +22,6 @@ public class MenuBarExample extends Application {
 
         Menu fileMenu = new Menu("File");
         Menu editMenu = new Menu("Edit");
-
-
         CheckMenuItem menuItem1 = new CheckMenuItem("Item 1");
         CheckMenuItem menuItem2 = new CheckMenuItem("Item 2");
         CheckMenuItem menuItem3 = new CheckMenuItem("Item 3");

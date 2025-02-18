@@ -1,6 +1,6 @@
 module com.javafx.javafx {
-    requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.web;
     requires java.desktop;
 
 

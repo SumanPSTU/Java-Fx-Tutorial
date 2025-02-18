@@ -9,7 +9,6 @@ import javafx.scene.layout.HBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
@@ -31,7 +30,7 @@ public class FileChooserExample extends Application {
             );
             if (file != null) {
                 try {
-                    Desktop.getDesktop().open(file);
+                   Desktop.getDesktop().open(file);
                 }catch (Exception ex){
                     ex.printStackTrace();
                 }
